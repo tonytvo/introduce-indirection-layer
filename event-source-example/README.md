@@ -3,7 +3,7 @@
 - X minutes do
     - It seems like OrderLines is a good home (domain concept) for Order.lines field, once you extract Order.lines into OrderLines, we could see a whole bunch of behavior should belong into OrderLines as well
     - **Setup**
-    - [ ] checkout https://github.com/tonytvo/event-sourcing-example
+    - [ ] checkout https://github.com/tonytvo/introduce-indirection-layer
     - [ ] run tests, see them pass
     - **extract lines logic in class `Order` into methods**
       - [ ] Extract a method to check if `isEmpty()`
