@@ -19,7 +19,7 @@
     - **move lines into parameter object `OrderLines`**
       - [ ] introduce lines into parameter objects for `asList`
         - ![introduce parameter object OrderLines](./snippets/introduce-parameter-objects-orderlines-for-as-list.gif) 
-        - [ ] move method into `OrderLines`
+        - [ ] move `asList` method into `OrderLines`
           - ![move asList method to OrderLines](./snippets/move-aslist-to-orderlines.gif)
       - [ ] introduce lines into existing parameter objects for `isEmpty`
         - ![introduce existing parameter object OrderLines](./snippets/introduce-parameter-object-use-existing-orderlines-for-is-empty.gif) 
