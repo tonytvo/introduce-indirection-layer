@@ -9,7 +9,7 @@
    - **liberating the wrapped**
      - [ ] extract all methods that references `Order.lines` as the following snippets
        - [ ] extract method `incrementItemCount`
-         - ![extract updateItem](./snippets/lines-update-item.gif)
+         - ![extract updateItem](./snippets/extract-increment-item-quantity.gif)
        - [ ] extract method `asList`
          - ![extract asList](./snippets/extract-aslist-lines.gif)
        - [ ] extract method `isEmpty`
