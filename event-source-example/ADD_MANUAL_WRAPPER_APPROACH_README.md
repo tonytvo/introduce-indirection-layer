@@ -26,7 +26,7 @@
          - [wrap unwrap lines](./snippets/wrap-unwrap-object.gif)
        - [ ] introduce parameter object `OrderLines`
          - [introduce parameter OrderLines](./snippets/introduce-parameter-orderlines.gif)
-       - [ ] [move updateItem to OrderLines](./snippets/move-update-item-to-orderlines.gif)
+       - [ ] [move updateItem to OrderLines](./snippets/move-incrementitemquantity-to-orderlines.gif)
      - [ ] move `isEmpty` to `OrderLines` with similar steps
    - **liberating the wrapped**
      - [ ] checkout introduce-indirection-starting-point branch

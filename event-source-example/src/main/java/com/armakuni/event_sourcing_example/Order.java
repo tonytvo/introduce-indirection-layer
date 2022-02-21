@@ -9,14 +9,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Order {
     private ArrayList<OrderEvent> newEvents = new ArrayList<>();
 
     private OrderID id;
-    private HashMap<ItemCode, Quantity> lines = new HashMap<>();
     private boolean placed = false;
+    private OrderLines orderLines = new OrderLines();
 
     public static Order create(OrderID orderID) {
         var orderCreated = new OrderCreated(orderID);
@@ -67,11 +66,7 @@ public class Order {
             throw new OrderHasNotBeenPlaced(id);
         }
 
-        var orderLines = lines.entrySet().stream()
-                .map((entry) -> new OrderLine(entry.getKey(), entry.getValue()))
-                .collect(Collectors.toList());
-
-        printer.print(orderLines);
+        printer.print(orderLines.asList());
     }
 
     private void applyEvent(OrderEvent event) {
@@ -93,11 +88,7 @@ public class Order {
             throw new OrderHasAlreadyBeenPlaced(id);
         }
 
-        var quantity = lines.containsKey(event.itemCode)
-                ? lines.get(event.itemCode).increment()
-                : Quantity.of(1);
-
-        lines.put(event.itemCode, quantity);
+        orderLines.incrementItemQuantity(event);
     }
 
     private void applyEvent(OrderPlaced event) {
@@ -105,10 +96,11 @@ public class Order {
             throw new OrderHasAlreadyBeenPlaced(id);
         }
 
-        if (lines.isEmpty()) {
+        if (orderLines.isEmpty()) {
             throw new OrderHasNoItems(id);
         }
 
         placed = true;
     }
+
 }

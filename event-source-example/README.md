@@ -6,25 +6,25 @@
     - [ ] checkout https://github.com/tonytvo/introduce-indirection-layer
     - [ ] run tests, see them pass
     - **extract lines logic in class `Order` into methods**
-      - [ ] Extract a method to check if `isEmpty()`
+      - [ ] Extract a method `isEmpty()` to check if the lines is empty 
         - ![extract isEmpty method](./snippets/extract-is-empty.gif) 
         - [ ] introduce parameter lines
-          - ![introduce lines parameter](./snippets/introduce-lines-parameter.gif)
-      - [ ] Extract a method to return `asList()`
+          - ![introduce lines parameter](./snippets/introduce-lines-parameter-for-is-empty.gif)
+      - [ ] Extract a method `asList()` to return the list of `OrderLine` 
         - ![extract asList method](./snippets/extract-aslist-lines.gif) 
         - [ ] introduce parameter lines
-      - [ ] Extract a method `incrementItemCount(ItemAdded)`
-        - ![extract incrementItemCount](./snippets/lines-update-item.gif) 
+      - [ ] Extract a method `incrementItemQuantity(ItemAdded)`
+        - ![extract incrementItemCount](./snippets/extract-increment-item-quantity.gif) 
         - [ ] introduce parameter lines
     - **move lines into parameter object `OrderLines`**
       - [ ] introduce lines into parameter objects for `asList`
-        - ![introduce parameter object OrderLines](./snippets/introduce-parameter-objects-orderlines.gif) 
+        - ![introduce parameter object OrderLines](./snippets/introduce-parameter-objects-orderlines-for-as-list.gif) 
         - [ ] move method into `OrderLines`
           - ![move asList method to OrderLines](./snippets/move-aslist-to-orderlines.gif)
       - [ ] introduce lines into existing parameter objects for `isEmpty`
-        - ![introduce existing parameter object OrderLines](./snippets/introduce-parameter-object-use-existing-orderlines.gif) 
+        - ![introduce existing parameter object OrderLines](./snippets/introduce-parameter-object-use-existing-orderlines-for-is-empty.gif) 
         - [ ] move method into `OrderLines`
-      - [ ] introduce lines into existing parameter objects for `incrementItemCount(ItemAdded)`
+      - [ ] introduce lines into existing parameter objects for `incrementItemQuantity(ItemAdded)`
         - [ ] move method into `OrderLines`
 
 # References
