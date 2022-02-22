@@ -26,6 +26,10 @@
         - [ ] move method into `OrderLines`
       - [ ] introduce lines into existing parameter objects for `incrementItemQuantity(ItemAdded)`
         - [ ] move method into `OrderLines`
+      - [ ] introduce `orderLines` field for `new OrderLines(lines)`
+        - ![introduce orderLines field](./snippets/introduce-field-orderlines.gif)
+      - [ ] inline `lines` field
+        - ![inline lines field](./snippets/inline-lines-field.gif)
 
 # References
 - https://github.com/codecop/dependency-breaking-katas
