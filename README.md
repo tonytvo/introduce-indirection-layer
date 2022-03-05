@@ -7,29 +7,29 @@
     - [ ] run tests, see them pass
     - **extract lines logic in class `Order` into methods**
       - [ ] Extract a method `isEmpty()` to check if the lines is empty 
-        - ![extract isEmpty method](./event-source-example/snippets/extract-is-empty.gif) 
+        - ![extract isEmpty method](./snippets/extract-is-empty.gif) 
         - [ ] introduce parameter lines
           - ![introduce lines parameter](./snippets/introduce-lines-parameter-for-is-empty.gif)
       - [ ] Extract a method `asList()` to return the list of `OrderLine` 
-        - ![extract asList method](./event-source-example/snippets/extract-aslist-lines.gif) 
+        - ![extract asList method](./snippets/extract-aslist-lines.gif) 
         - [ ] introduce parameter lines
       - [ ] Extract a method `incrementItemQuantity(ItemAdded)`
-        - ![extract incrementItemCount](./event-source-example/snippets/extract-increment-item-quantity.gif) 
+        - ![extract incrementItemCount](./snippets/extract-increment-item-quantity.gif) 
         - [ ] introduce parameter lines
     - **move lines into parameter object `OrderLines`**
       - [ ] introduce lines into parameter objects for `asList`
-        - ![introduce parameter object OrderLines](./event-source-example/snippets/introduce-parameter-objects-orderlines-for-as-list.gif) 
+        - ![introduce parameter object OrderLines](./snippets/introduce-parameter-objects-orderlines-for-as-list.gif) 
         - [ ] move `asList` method into `OrderLines`
-          - ![move asList method to OrderLines](./event-source-example/snippets/move-aslist-to-orderlines.gif)
+          - ![move asList method to OrderLines](./snippets/move-aslist-to-orderlines.gif)
       - [ ] introduce lines into existing parameter objects for `isEmpty`
-        - ![introduce existing parameter object OrderLines](./event-source-example/snippets/introduce-parameter-object-use-existing-orderlines-for-is-empty.gif) 
+        - ![introduce existing parameter object OrderLines](./snippets/introduce-parameter-object-use-existing-orderlines-for-is-empty.gif) 
         - [ ] move method into `OrderLines`
       - [ ] introduce lines into existing parameter objects for `incrementItemQuantity(ItemAdded)`
         - [ ] move method into `OrderLines`
       - [ ] introduce `orderLines` field for `new OrderLines(lines)`
-        - ![introduce orderLines field](./event-source-example/snippets/introduce-field-orderlines.gif)
+        - ![introduce orderLines field](./snippets/introduce-field-orderlines.gif)
       - [ ] inline `lines` field
-        - ![inline lines field](./event-source-example/snippets/inline-lines-field.gif)
+        - ![inline lines field](./snippets/inline-lines-field.gif)
 
 # References
 - https://github.com/codecop/dependency-breaking-katas
