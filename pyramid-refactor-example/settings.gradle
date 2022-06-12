@@ -1,0 +1,6 @@
+rootProject.name = 'pyramid-refactoring'
+include '1-Legacy-Search'
+include '2-Pyramid-Basement'
+include '3-Emerging-Interpreter'
+include '4-Completed-Interpreter'
+include '5-Interpreter-Factories'
